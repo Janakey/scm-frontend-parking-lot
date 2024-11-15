@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parking Lot Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to College Parking System</h1>
+    <nav>
+      <a href="registration.html">Registration</a>
+      <a href="login.html">Login</a>
+      <a href="status.html">Parking Status</a>
+      <a href="admin.html">Admin Panel</a>
+    </nav>
+  </header>
+  
+  <section id="welcome">
+    <h2>Register for a Parking Spot</h2>
+    <form id="registration-form">
+      <label for="user-id">User ID:</label>
+      <input type="text" id="user-id" name="user-id" required>
+
+      <label for="user-type">User Type:</label>
+      <select id="user-type" name="user-type" required>
+        <option value="student">Student</option>
+        <option value="faculty">Faculty</option>
+        <option value="guardian">Guardian</option>
+        <option value="office">Office Worker</option>
+        <option value="alumni">Alumni</option>
+      </select>
+
+      <label for="vehicle-type">Vehicle Type:</label>
+      <select id="vehicle-type" name="vehicle-type" required>
+        <option value="two-wheeler">Two-Wheeler</option>
+        <option value="car">Car</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+</body>
+</html>
